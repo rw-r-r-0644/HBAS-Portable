@@ -27,19 +27,6 @@ typedef struct _private_data_t
     EXPORT_DECL(int, __os_snprintf, char* s, int n, const char * format, ...);
     EXPORT_DECL(void, exit, void);
 
-	/*
-    EXPORT_DECL(int, FSInit, void);
-    EXPORT_DECL(int, FSAddClientEx, void *pClient, int unk_zero_param, int errHandling);
-    EXPORT_DECL(int, FSDelClient, void *pClient);
-    EXPORT_DECL(void, FSInitCmdBlock, void *pCmd);
-    EXPORT_DECL(int, FSGetMountSource, void *pClient, void *pCmd, int type, void *source, int errHandling);
-    EXPORT_DECL(int, FSMount, void *pClient, void *pCmd, void *source, const char *target, uint32_t bytes, int errHandling);
-    EXPORT_DECL(int, FSUnmount, void *pClient, void *pCmd, const char *target, int errHandling);
-    EXPORT_DECL(int, FSOpenFile, void *pClient, void *pCmd, const char *path, const char *mode, int *fd, int errHandling);
-    EXPORT_DECL(int, FSGetStatFile, void *pClient, void *pCmd, int fd, void *buffer, int error);
-    EXPORT_DECL(int, FSReadFile, void *pClient, void *pCmd, void *buffer, int size, int count, int fd, int flag, int errHandling);
-    EXPORT_DECL(int, FSCloseFile, void *pClient, void *pCmd, int fd, int errHandling);
-	*/
 	EXPORT_DECL(int, ACInitialize, void);
 	EXPORT_DECL(int, ACGetStartupId, uint32_t *id);
 	EXPORT_DECL(int, ACConnectWithConfigId, uint32_t id);
