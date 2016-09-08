@@ -41,12 +41,6 @@ typedef struct _private_data_t
     EXPORT_DECL(int, SYSRelaunchTitle, int argc, char* argv);
 } private_data_t;
 
-typedef struct _cfile
-{
-	unsigned char dlf[0x801304]; //Max file size
-	unsigned int len;
-} cfile;
-
 static int curl_write_data_callback(void *ptr, uint32_t size, uint32_t nmemb, private_data_t *private_data)
 {
   uint32_t new_len = private_data->len + size*nmemb;
